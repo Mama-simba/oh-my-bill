@@ -6,4 +6,223 @@
 
 body {
     box-sizing: border-box;
+    font-family: 'Noto Serif', serif; 
 }
+
+main {
+    width: 50%;
+    height: 100vh;
+    border-radius: 10px;
+    margin: 0 auto;
+    background-color: white;
+    box-shadow: -1px -1px 46px 5px rgba(155, 35, 234, 0.5) ;
+}
+
+
+/* COUNTER SECTION */
+
+.counter  {
+    padding: 3rem 0;
+    width: 100%;
+    height: 200px;
+    margin: 5rem auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    color: #73777B;
+}
+
+
+.energyCostsInput {
+    padding: 5px 0;
+    margin: 0 2px;
+    box-shadow: 5px 3px 5px lightgray;
+}
+
+
+.counter > button {
+    border: none;
+    padding: 8px 15px;
+    border-radius: 4px;
+    border-width:1px;
+    color:#ffffff;
+    border-color:#a511c0;
+    box-shadow:inset 0px 1px 0px 0px #e184f3;
+    text-shadow:inset 0px 1px 0px #9b14b3;
+    background:linear-gradient(#c123de, #a20dbd);
+}
+
+.counter > button:hover {
+  background: linear-gradient(#a20dbd, #c123de);
+  font-weight: bold;
+  cursor: pointer;
+  box-shadow: 5px 3px 5px lightgray;
+}
+
+
+/* ESTIMATION SECTION */
+
+.estimations {
+    display: none;
+    padding: 3rem 0;
+    width: 100%;
+    height: 200px;
+    margin: 5rem auto;
+    color: #73777B;
+    text-align: center; 
+}
+
+img {
+    display: block;
+    margin: 0 auto;
+    width: 50%;
+}
+
+
+
+/* SIDEBAR */
+
+aside {
+    width: 30%;
+    height: 100%;
+    background-color: transparent;
+    color: white;
+    
+    position: fixed;
+    top: 0;
+    right: -25%; 
+
+    transition: all 0.3s ease-in-out;
+}
+
+.hamburger {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+}
+
+
+.hamburger span {
+    display: block;
+    background-color: #73777B;
+    width: 30px;
+    height: 5px;
+    margin: 3px;
+    border-radius: 6px;
+}
+
+
+
+aside > .costsBox {
+    width: 100%;
+    height: 180px;
+    margin: 5rem auto;
+    padding: 2rem 0;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.costsBox > input {
+    padding: 5px 0;
+    margin: 0 2px;
+}
+
+
+
+.costsBox > button {
+    padding: 8px 15px;
+    border-radius: 4px;
+    border-width:1px;
+    color:#a511c0;
+    font-weight: bold;
+    border-color:#ffff;
+    box-shadow: inset 0px 0px 5px 0px #e184f3;
+    background:#ffff;   
+}
+
+.costsBox > button:hover {
+    cursor: pointer;
+    box-shadow: 0px 0px 15px 0px white;
+}
+
+
+/* BURGER EFFECTS */
+
+aside.active {
+    right: 0;
+    background-image: linear-gradient(to top, #5f72bd 0%, #9b23ea 100%);
+    -webkit-box-shadow: -11px 12px 15px -2px #000000; 
+    box-shadow: -11px 12px 15px -2px #000000;
+    transition: all 0.3s ease-in-out;
+}
+
+
+
+.hamburger.active .bar1 {
+    transform: translateY(8px) rotate(45deg);
+    background-color: white;
+}
+
+.hamburger.active .bar2 {
+    opacity: 0;
+}
+
+.hamburger.active .bar3 {
+    transform: translateY(-8px) rotate(-45deg);
+    background-color: white;
+}
+
+
+/* SLIDER */
+
+.slider {
+    position: absolute;
+    bottom: 2rem;
+    left: 48%; 
+}
+
+
+.slider span {
+    display: inline-block;
+    border-radius: 50%;
+    margin: 0 3px;
+}
+
+.slider .point1 {
+    height: 24px;
+    width: 24px;
+    background-color: #9b23ea;
+}
+
+.slider .point2 {
+    height: 20px;
+    width: 20px;
+    background-color: #CFD2CF;
+}    
+
+
+.slider span:hover {
+     cursor: pointer;
+     box-shadow: 5px 3px 5px #CFD2CF; 
+}    
+
+
+.point1.active {
+    height: 20px;
+    width: 20px;
+    background-color: #CFD2CF;
+}  
+
+.point2.active {
+    background-color: #9b23ea;
+    height: 24px;
+    width: 24px;
+}
+
+
+
+
