@@ -1,14 +1,13 @@
 
 
+let hamburger = document.querySelector(".hamburger");
+let sidebar = document.querySelector("aside");
+
 function showMenu() {
     hamburger.classList.toggle("active"); 
     sidebar.classList.toggle("active");   
 }
 
-
-
-let hamburger = document.querySelector(".hamburger");
-let sidebar = document.querySelector("aside");
 hamburger.addEventListener("click", showMenu);
 
 
