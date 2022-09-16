@@ -3,12 +3,11 @@
 let hamburger = document.getElementById("hamburger");
 let sidebar = document.querySelector("aside");
 
-function showMenu() {
-    hamburger.classList.toggle("active"); 
-    sidebar.classList.toggle("active");   
-}
 
-hamburger.addEventListener("click", showMenu);
+hamburger.addEventListener("click", function(){
+    hamburger.classList.toggle("active"); 
+    sidebar.classList.toggle("active"); 
+});
 
 
 
