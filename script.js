@@ -12,7 +12,7 @@ hamburger.addEventListener("click", function(){
 
 
 
-/*SLIDER*/
+/* SLIDER */
 
 
 function showEstimationSection(){
