@@ -1,6 +1,6 @@
 
 
-let hamburger = document.querySelector(".hamburger");
+let hamburger = document.getElementById("hamburger");
 let sidebar = document.querySelector("aside");
 
 function showMenu() {
