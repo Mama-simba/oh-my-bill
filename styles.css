@@ -22,7 +22,7 @@ main {
 /* COUNTER SECTION */
 
 .counter  {
-    padding: 3rem 0;
+    padding: 4rem 0;
     width: 100%;
     height: 200px;
     margin: 5rem auto;
@@ -33,12 +33,28 @@ main {
     color: #73777B;
 }
 
+.dateContainer{
+     margin-top: 2rem;
+}
+.dateContainer,
+.costsContainer {
+    width: 70%;
+    text-align: center; 
+}
 
+
+label {
+    font-size: 14px;
+}
+
+.dateInput,
 .energyCostsInput {
     padding: 5px 0;
     margin: 0 2px;
     box-shadow: 5px 3px 5px lightgray;
 }
+
+
 
 
 .counter > button {
