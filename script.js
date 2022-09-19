@@ -1,7 +1,7 @@
 
 
 let hamburger = document.getElementById("hamburger");
-let sidebar = document.querySelector("aside");
+let sidebar = document.querySelector(".sidebar");
 
 
 hamburger.addEventListener("click", function(){

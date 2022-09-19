@@ -83,7 +83,7 @@ img {
 
 /* SIDEBAR */
 
-aside {
+.sidebar {
     width: 30%;
     height: 100%;
     background-color: transparent;
@@ -96,14 +96,14 @@ aside {
     transition: all 0.3s ease-in-out;
 }
 
-.hamburger {
+#hamburger {
     position: absolute;
     top: 15px;
     left: 15px;
 }
 
 
-.hamburger span {
+#hamburger span {
     display: block;
     background-color: #73777B;
     width: 30px;
@@ -114,7 +114,7 @@ aside {
 
 
 
-aside > .costsBox {
+.sidebar > .costsBox {
     width: 100%;
     height: 180px;
     margin: 5rem auto;
@@ -152,7 +152,7 @@ aside > .costsBox {
 
 /* BURGER EFFECTS */
 
-aside.active {
+.sidebar.active {
     right: 0;
     background-image: linear-gradient(to top, #5f72bd 0%, #9b23ea 100%);
     -webkit-box-shadow: -11px 12px 15px -2px #000000; 
@@ -162,16 +162,16 @@ aside.active {
 
 
 
-.hamburger.active .bar1 {
+#hamburger.active .bar1 {
     transform: translateY(8px) rotate(45deg);
     background-color: white;
 }
 
-.hamburger.active .bar2 {
+#hamburger.active .bar2 {
     opacity: 0;
 }
 
-.hamburger.active .bar3 {
+#hamburger.active .bar3 {
     transform: translateY(-8px) rotate(-45deg);
     background-color: white;
 }
